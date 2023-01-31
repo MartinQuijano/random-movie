@@ -88,6 +88,10 @@
     text-align: center;
 }
 
+.select {
+    min-width: 155px;
+}
+
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) ============== */
 @media screen and (max-width: 1024px) {
     .main__movie-card {
@@ -122,7 +126,7 @@
 }
 
 /* =============== MEDIA QUERIES (SMALL DEVICES) ============== */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
 
     .main__movie-card,
     .main__movie-picked {

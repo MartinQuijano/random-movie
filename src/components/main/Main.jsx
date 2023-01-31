@@ -72,12 +72,12 @@ const Main = () => {
         <>
             <div className='container'>
                 <div className="main_filters">
-                    <select className='btn btn-primary' id="genre_id" value={filters.genre_id} onChange={handleFilterChange} name="genre_id">
+                    <select className='btn btn-primary select' id="genre_id" value={filters.genre_id} onChange={handleFilterChange} name="genre_id">
                         <option value="">-- Genre --</option>
                         {genres.length > 0 && genres.map((genre) => { return <option key={`${genre.name}`} value={`${genre.id}`}>{genre.name}</option> })}
                     </select>
 
-                    <select className='btn btn-primary' id="rating" value={filters.rating} onChange={handleFilterChange} name="rating">
+                    <select className='btn btn-primary select' id="rating" value={filters.rating} onChange={handleFilterChange} name="rating">
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -91,12 +91,12 @@ const Main = () => {
                         <option value="10">10</option>
                     </select>
 
-                    <select className="btn btn-primary" id="initialYear" value={filters.initialYear} onChange={handleFilterChange} name="initialYear">
+                    <select className="btn btn-primary select" id="initialYear" value={filters.initialYear} onChange={handleFilterChange} name="initialYear">
                         <option value="">-- Initial Year --</option>
                         {years.map(year => { return <option key={`${year}`} value={`${year}`}>{year}</option> })}
                     </select>
 
-                    <select className="btn btn-primary" id="finalYear" value={filters.finalYear} onChange={handleFilterChange} name="finalYear">
+                    <select className="btn btn-primary select" id="finalYear" value={filters.finalYear} onChange={handleFilterChange} name="finalYear">
                         <option value="">-- Final Year --</option>
                         {years.map(year => { return <option key={`${year}`} value={`${year}`}>{year}</option> })}
                     </select>
