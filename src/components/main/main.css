@@ -1,0 +1,142 @@
+.main__movie-card {
+    display: grid;
+    grid-template-columns: 35% 60%;
+    background-color: var(--color-bg-variant);
+    border-radius: 2rem;
+    padding: 3rem;
+    gap: 5%;
+
+    width: 60%;
+    margin: 0 auto 2rem;
+}
+
+.main__movie-info h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.main__movie-info ul li {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+}
+
+.main__movie-info p {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+.main__buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0 auto 2rem;
+}
+
+.main_filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.main__selected-movies {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 2rem;
+}
+
+.main__movie-selected {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-bg-variant);
+    border-radius: 2rem;
+    padding: 1rem;
+    gap: 1rem;
+    margin: 0 auto 2rem;
+}
+
+.main__movie-selected img {
+    width: 40%;
+    height: auto;
+}
+
+.main__movie-selected h3 {
+    text-align: center;
+}
+
+.main__movie-picked {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-bg-variant);
+    border-radius: 2rem;
+    padding: 2rem;
+    gap: 1rem;
+
+    width: 30%;
+
+    margin: 0 auto 2rem;
+}
+
+.main__movie-picked h3 {
+    text-align: center;
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) ============== */
+@media screen and (max-width: 1024px) {
+    .main__movie-card {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        width: var(--container-width-md);
+    }
+
+    .main__selected-movies {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main__movie-picked {
+        width: var(--container-width-md);
+    }
+
+    .main__movie-picked img {
+        width: 50%;
+        height: auto;
+    }
+
+    .main__movie-image {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .main__movie-info h1 {
+        text-align: center;
+    }
+}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) ============== */
+@media screen and (max-width: 700px) {
+
+    .main__movie-card,
+    .main__movie-picked {
+        width: var(--container-width-sm);
+    }
+
+    .main_filters {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main__selected-movies {
+        grid-template-columns: 1fr;
+    }
+}
